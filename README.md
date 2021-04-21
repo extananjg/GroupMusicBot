@@ -1,7 +1,7 @@
-<h2 align="centre">Music Play Bot 🎵</h2>
+<h2 align="centre">Music Play Bot x-taa🎵</h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/e1d2e60a756b2cda8a058.jpg">
+  <img src="https://telegra.ph/file/5f778b578224d8ddab07e.jpg">
 </p>
 
 <h3>Requirements 📝</h3>
