@@ -22,7 +22,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎 **Mencari ** lagu ...")
+    lel = await message.reply("🔎 **Mencari ** lagu yang diinginkan...")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Proses** lagu...")
+    await lel.edit("🎵 **Memproses** lagu yang diinginkan...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -61,8 +61,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
-                        url=f"{url}")
+                        text="🍁instagram🍁",
+                        url="https://www.instagram.com/eextaa_")
                    
                 ]
             ]
@@ -72,8 +72,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
-                        url=f"{url}")
+                        text="🍁instagram🍁",
+                        url="https://www.instagram.com/eextaa_")
                    
                 ]
             ]
@@ -93,7 +93,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo=thumb_name, 
-        caption=f"#⃣ request lagu **queued** telah masuk antrian ke {position}!",
+        caption=f"#⃣ request lagu **Berhasil** telah masuk antrian ke {position}!",
         reply_markup=keyboard2)
         return await lel.delete()
     else:
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="▶️ **Memutar** req lagu by {} via YouTube Music 😜".format(
+        caption="▶️ **Memutar** lagu by {} via YouTube Music 😘".format(
         message.from_user.mention()
         ),
     )
