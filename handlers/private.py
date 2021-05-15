@@ -43,7 +43,11 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/HeartCrackscnl")
+                        "🔊 Channel", url="https://t.me/HeartCrackscnl" 
+                    ),
+                    InlineKeyboardButton(
+                        "Instagram own", url="https://https://www.instagram.com/eextaa_"
+                    )
                 ]
             ]
         )
