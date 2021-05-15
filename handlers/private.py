@@ -11,25 +11,28 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Hai aku {bn} 🎵
 
-Saya bisa memutar musik di voice chat group anda . Dikembamgkan oleh [xᴛᴀᴀ](https://t.me/xtaaaanj)
+Aku adalah Musik Bot, bot sumber terbuka yang memungkinkan Anda memutar musik di grup telegram Anda.
+Tidak mengetahui cara memakainya? Baca panduan pemakaian agar langsung memahami tanpa bertanya!
+━━━━━━━━━━━━━━━━━━━━━━ 
 
-Gunakan bot ini dengan baik. Jika terjadi kendala hubungi [xᴛᴀᴀ](https://t.me/xtaaaanj) **
+Pemilik bot : [xᴛᴀᴀ](https://t.me/xtaaaanj)
+bot Assistant : [xᴛᴀᴀɴᴊᴋɴᴛʟ Assistant](https://t.me/xtaanjkntlasisten) **
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Penjelasan perintah", url="https://telegra.ph/PERINTAH-04-21")
+                        "📕panduan perintah", url="https://telegra.ph/PERINTAH-04-21")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/gppdahsini"
+                        "💬 Group mutualan", url="https://t.me/gppdahsini"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel ", url="https://t.me/HeartCrackscnl"
+                        "🔊 Channel bucin", url="https://t.me/HeartCrackscnl"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "instagram own", url="https://www.instagram.com/eextaa_"
                     )]
             ]
         ),
@@ -38,12 +41,12 @@ Gunakan bot ini dengan baik. Jika terjadi kendala hubungi [xᴛᴀᴀ](https://t
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**xᴛᴀᴀɴᴊᴋɴᴛʟ Music ʙᴏᴛ sedang online bous😎**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/HeartCrackscnl" 
+                        "🔊 Channel bucin", url="https://t.me/HeartCrackscnl" 
                     ),
                     InlineKeyboardButton(
                         "Instagram own", url="https://https://www.instagram.com/eextaa_"
